@@ -1,6 +1,6 @@
 # RandomCoffee - Technical test
 
-⚠⚠⚠ You can test the code by running _node index.js_. There already are examples so you can check it works well. ⚠⚠⚠
+⚠ You can test the code by running _node index.js_. There already are examples so you can check it works well.⚠
 
 ## ALGORITHM
 
