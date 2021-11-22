@@ -81,7 +81,7 @@ Or you can simply limit the rate o requests on your server
 
 We want to have the url as short as possible, with maybe a possibility to create custom urls, and the url should redirect to a bigger and unique url.
 To convert the url, I'd use Base64 because its efficient and it will provide a lot of short url possibilities : 64^N with N the short url lengths.
-Use a rest API because simple and we dont need graphql.
+Use a rest API because simple and we dont need graphql. I think I'd use express to get started fast.
 One route to create a new short url and one to get the big url when we pass the short one
 The system should also expose its api in order to let other aps to use it.
 System should be scalable to be able to handle as much requests as it needs : load balancer or serverless as AWS.
@@ -89,6 +89,7 @@ There will a lot more reads than writes. In order to not have to much read reque
 use api keys and give one to each user to prevent spamming
 one table for users and one for links (that will have userID, the long url and the short created one)
 For scalability, well choose NoSQL options like MongoDB for example.
+And for front end, just add a input where users would paste their links. And if you want to enable custom links, add also the possibility to enter you custom link.
 
 ## JAVASCRIPT
 
